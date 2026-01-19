@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -10,8 +11,9 @@ export default function LandingPage() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-2">
-            <div className="h-10 w-10 rounded-full bg-secondary" />
-            <span className="font-bold text-lg md:text-xl text-primary">Talent Hunt</span>
+            {/* <div className="h-10 w-10 rounded-full bg-secondary" /> */}
+            {/* <span className="font-bold text-lg md:text-xl text-primary">Talent Hunt</span> */}
+            <Image src="/logo-decisao-brasil.png" alt="Talent Hunt" width={180} height={100} />
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#servicos" className="text-sm font-medium hover:text-secondary transition-colors">
@@ -193,7 +195,7 @@ export default function LandingPage() {
                 <div className="h-12 w-12 rounded-lg bg-muted flex items-center justify-center">
                   <Briefcase className="h-6 w-6 text-foreground" />
                 </div>
-                <CardTitle className="text-xl md:text-2xl">Básico</CardTitle>
+                <CardTitle className="text-xl md:text-2xl">Lite</CardTitle>
                 <CardDescription className="text-sm md:text-base">
                   Ideal para empresas iniciando processos seletivos
                 </CardDescription>
@@ -202,23 +204,27 @@ export default function LandingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Mapeamento básico de mercado</span>
+                    <span className="text-sm md:text-base leading-relaxed">Entrevista profissional</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Triagem de currículos</span>
+                    <span className="text-sm md:text-base leading-relaxed">Reestruturação Curricular</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Até 3 entrevistas estruturadas</span>
+                    <span className="text-sm md:text-base leading-relaxed">Estudo de Perfil</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Relatório de candidatos</span>
+                    <span className="text-sm md:text-base leading-relaxed">Avaliação arquétipo de competência, habilidade e atitude</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Garantia de 30 dias</span>
+                    <span className="text-sm md:text-base leading-relaxed">Entrevista e processos seletivos (orientação)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span className="text-sm md:text-base leading-relaxed">Monitoramento dos processos</span>
                   </li>
                 </ul>
               </CardContent>
@@ -233,7 +239,7 @@ export default function LandingPage() {
                 <div className="h-12 w-12 rounded-lg bg-secondary/20 flex items-center justify-center">
                   <Award className="h-6 w-6 text-secondary" />
                 </div>
-                <CardTitle className="text-xl md:text-2xl text-secondary">Ouro</CardTitle>
+                <CardTitle className="text-xl md:text-2xl text-secondary">Plus <span className="text-sm">(+ Lite)</span></CardTitle>
                 <CardDescription className="text-sm md:text-base">
                   Solução completa para gestão de talentos
                 </CardDescription>
@@ -242,27 +248,23 @@ export default function LandingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Mapeamento avançado de mercado</span>
+                    <span className="text-sm md:text-base leading-relaxed">Negociação com diferentes perfis</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Prospecção ativa de talentos</span>
+                    <span className="text-sm md:text-base leading-relaxed">Linguagem, corporal, tom de voz e escuta</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Entrevistas ilimitadas</span>
+                    <span className="text-sm md:text-base leading-relaxed">Marketing pessoal</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Avaliação comportamental STAR</span>
+                    <span className="text-sm md:text-base leading-relaxed">Análise e criação do perfil online</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Acompanhamento de onboarding</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Garantia de 60 dias</span>
+                    <span className="text-sm md:text-base leading-relaxed">Cenário do mercado alvo</span>
                   </li>
                 </ul>
               </CardContent>
@@ -274,7 +276,7 @@ export default function LandingPage() {
                 <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl md:text-2xl text-primary">Diamante</CardTitle>
+                <CardTitle className="text-xl md:text-2xl text-primary">Master <span className="text-sm">(Lite + Plus)</span></CardTitle>
                 <CardDescription className="text-sm md:text-base">
                   Exclusivo para cargos executivos e estratégicos
                 </CardDescription>
@@ -283,31 +285,31 @@ export default function LandingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Headhunting especializado</span>
+                    <span className="text-sm md:text-base leading-relaxed">Criação do Linkedin ou reestruturação (CV Digital)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Mapeamento internacional</span>
+                    <span className="text-sm md:text-base leading-relaxed">Criação de landing page</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Consultoria estratégica PDI</span>
+                    <span className="text-sm md:text-base leading-relaxed">Posicionamento Instagram</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Avaliação psicológica completa</span>
+                    <span className="text-sm md:text-base leading-relaxed">Mentoria 3 meses</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Negociação assistida</span>
+                    <span className="text-sm md:text-base leading-relaxed">Criação de Pallet de cores</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Acompanhamento estendido 6 meses</span>
+                    <span className="text-sm md:text-base leading-relaxed">Narca pessoal</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Garantia de 90 dias</span>
+                    <span className="text-sm md:text-base leading-relaxed">Catalogar empresas</span>
                   </li>
                 </ul>
               </CardContent>
