@@ -46,15 +46,17 @@ export default function LandingPage() {
         <div className="absolute inset-0 bg-[url('/abstract-professional-business-pattern.jpg')] opacity-5" />
         <div className="container relative px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-6 bg-secondary text-secondary-foreground hover:bg-secondary/90">
+            {/* <Badge className="mb-6 bg-secondary text-secondary-foreground hover:bg-secondary/90">
               Especialistas em Talent Hunting
-            </Badge>
+            </Badge> */}
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance px-2">
               Conectamos os Melhores Talentos às Melhores Oportunidades
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 text-primary-foreground/90 text-pretty leading-relaxed px-2">
-              Foco em pessoas e organização, atuando no desenvolvimento humano na prática dos processos de recrutamento
-              especializado.
+              {/* Foco em pessoas e organização, atuando no desenvolvimento humano na prática dos processos de recrutamento
+              especializado. */}
+              {/* Metodologia, processo e estratégia para gerar resultados em recrutamento especializado, outplacement e transição de carreira, com foco na recolocação profissional.  */}
+              Processos estruturados e estratégias estratégicas de outplacement e transição de carreira, com foco total na recolocação profissional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
@@ -79,7 +81,7 @@ export default function LandingPage() {
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">Nossos Serviços</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-              Oferecemos soluções completas em gestão de talentos e desenvolvimento humano
+              Trabalho realizado com metodologia job hunter
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -89,15 +91,15 @@ export default function LandingPage() {
                 icon: Target,
                 description: "Busca especializada de profissionais para cargos estratégicos",
               },
-              { title: "Outplacement", icon: Users, description: "Recolocação profissional com suporte completo" },
+              { title: "Outplacement", icon: Users, description: "Suporte emocional e orientação de carreira" },
               {
-                title: "Treinamento e Desenvolvimento",
+                title: "Recolocação profissional",
                 icon: TrendingUp,
-                description: "Capacitação e aprimoramento de equipes",
+                description: "Processo estratégico de reinserção no mercado de trabalho",
               },
-              { title: "Metodologia STAR", icon: Award, description: "Avaliação comportamental estruturada" },
+              { title: "Transição de carreira", icon: Award, description: "Utilizando experiência  anterior como diferencial" },
               {
-                title: "Consultoria de Processos PDI",
+                title: "Desenvolvimento de Pessoas PDI",
                 icon: Briefcase,
                 description: "Plano de Desenvolvimento Individual personalizado",
               },
