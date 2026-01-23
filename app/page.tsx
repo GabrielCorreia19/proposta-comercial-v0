@@ -132,48 +132,39 @@ export default function LandingPage() {
             </h2>
             <Card className="border-secondary/20">
               <CardHeader className="space-y-2 p-5 md:p-6">
-                <CardTitle className="text-xl md:text-2xl text-secondary">Talent Hunting</CardTitle>
+                <CardTitle className="text-xl md:text-2xl text-secondary">Assessoria para Recolocação Profissional</CardTitle>
                 <CardDescription className="text-sm md:text-base leading-relaxed">
-                  Processo especializado de Headhunter de forma ativa e personalizada na busca de encontrar e atrair
-                  profissional para ocupar cargo especializado.
+                  Direcionamento na busca por uma nova oportunidade profissional.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 md:space-y-8 p-5 md:p-6">
                 <div>
                   <h3 className="font-semibold text-base md:text-lg mb-3 flex items-center gap-2">
                     <Target className="h-5 w-5 text-secondary shrink-0" />
-                    Propósito
+                    Metodologia
                   </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    Foco em pessoas e organização, atuando no desenvolvimento humano na prática dos processos.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-base md:text-lg mb-3 flex items-center gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0" />
-                    Objetivo Principal
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    Vendedor Interno (1), Vendedor Externo (1) com competências e habilidades específicos.
-                  </p>
+                  <ul className="text-sm md:text-base text-muted-foreground leading-relaxed space-y-2 list-disc list-inside">
+                    <li>Alinhamento de expectativas</li>
+                    <li>Mapeamento de network</li>
+                    <li>Auto avaliação</li>
+                    <li>Identificação Curricular</li>
+                    <li>Negociação</li>
+                    <li>Feedback</li>
+                  </ul>
                 </div>
                 <div>
                   <h3 className="font-semibold text-base md:text-lg mb-3 flex items-center gap-2">
                     <TrendingUp className="h-5 w-5 text-secondary shrink-0" />
-                    Processo Alternativo
+                    Estratégia
                   </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    Garantir de forma estratégica o melhor alinhamento entre profissional e necessidade da empresa.
-                  </p>
-                </div>
-                <div className="bg-secondary/10 p-4 md:p-6 rounded-lg">
-                  <h3 className="font-semibold text-base md:text-lg mb-3 flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-secondary shrink-0" />
-                    Garantia
-                  </h3>
-                  <p className="text-sm md:text-base text-foreground leading-relaxed">
-                    <strong>90 dias</strong> na substituição do candidato sem custo adicional.
-                  </p>
+                  <ul className="text-sm md:text-base text-muted-foreground leading-relaxed space-y-2 list-disc list-inside">
+                    <li>Headhunters / Empresas</li>
+                    <li>Networking</li>
+                    <li>Processos Seletivos</li>
+                    <li>Prospecção com Mercado</li>
+                    <li>Monitoramento dos processos</li>
+                    <li>Suporte nas propostas</li>
+                  </ul>
                 </div>
               </CardContent>
             </Card>
@@ -192,15 +183,20 @@ export default function LandingPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {/* Plano Básico */}
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="relative hover:shadow-lg transition-shadow"> {/* Added relative class for absolute positioning */}
+              {/* Pricing for Lite Plan */}
+              <div className="absolute top-4 right-4 text-right z-10">
+                <span className="block text-sm font-semibold text-primary">2 Salários Mínimos</span>
+                <span className="block text-xs text-muted-foreground">+ 50% taxa de sucesso</span>
+              </div>
               <CardHeader className="space-y-4 p-5 md:p-6">
                 <div className="h-12 w-12 rounded-lg bg-muted flex items-center justify-center">
                   <Briefcase className="h-6 w-6 text-foreground" />
                 </div>
                 <CardTitle className="text-xl md:text-2xl">Lite</CardTitle>
-                <CardDescription className="text-sm md:text-base">
-                  Ideal para empresas iniciando processos seletivos
-                </CardDescription>
+                {/* <CardDescription className="text-sm md:text-base">
+                  Ideal para profissionais iniciando
+                </CardDescription> */}
               </CardHeader>
               <CardContent className="p-5 md:p-6">
                 <ul className="space-y-4">
@@ -216,10 +212,10 @@ export default function LandingPage() {
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                     <span className="text-sm md:text-base leading-relaxed">Estudo de Perfil</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  {/* <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                     <span className="text-sm md:text-base leading-relaxed">Avaliação arquétipo de competência, habilidade e atitude</span>
-                  </li>
+                  </li> */}
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                     <span className="text-sm md:text-base leading-relaxed">Entrevista e processos seletivos (orientação)</span>
@@ -233,18 +229,23 @@ export default function LandingPage() {
             </Card>
 
             {/* Plano Ouro */}
-            <Card className="hover:shadow-lg transition-shadow border-secondary/50 relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <Badge className="bg-secondary text-secondary-foreground">Mais Popular</Badge>
+            <Card className="relative hover:shadow-lg transition-shadow border-secondary/50 relative">
+              {/* Pricing for Plus Plan */}
+              <div className="absolute top-4 right-4 text-right z-10">
+                <span className="block text-sm font-semibold text-primary">3 Salários Mínimos</span>
+                <span className="block text-xs text-muted-foreground">+ 50% taxa de sucesso</span>
               </div>
+              {/* <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <Badge className="bg-secondary text-secondary-foreground">Mais Popular</Badge>
+              </div> */}
               <CardHeader className="space-y-4 p-5 md:p-6 pt-8">
                 <div className="h-12 w-12 rounded-lg bg-secondary/20 flex items-center justify-center">
                   <Award className="h-6 w-6 text-secondary" />
                 </div>
                 <CardTitle className="text-xl md:text-2xl text-secondary">Plus <span className="text-sm">(+ Lite)</span></CardTitle>
-                <CardDescription className="text-sm md:text-base">
+                {/* <CardDescription className="text-sm md:text-base">
                   Solução completa para gestão de talentos
-                </CardDescription>
+                </CardDescription> */}
               </CardHeader>
               <CardContent className="p-5 md:p-6">
                 <ul className="space-y-4">
@@ -262,7 +263,7 @@ export default function LandingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Análise e criação do perfil online</span>
+                    <span className="text-sm md:text-base leading-relaxed">Análise e criação do perfil digital</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
@@ -273,21 +274,26 @@ export default function LandingPage() {
             </Card>
 
             {/* Plano Diamante */}
-            <Card className="hover:shadow-lg transition-shadow border-primary/50 md:col-span-2 lg:col-span-1">
+            <Card className="relative hover:shadow-lg transition-shadow border-primary/50 md:col-span-2 lg:col-span-1">
+              {/* Pricing for Master Plan */}
+              <div className="absolute top-4 right-4 text-right z-10">
+                <span className="block text-sm font-semibold text-primary">4 Salários Mínimos</span>
+                <span className="block text-xs text-muted-foreground">+ 50% taxa de sucesso</span>
+              </div>
               <CardHeader className="space-y-4 p-5 md:p-6">
                 <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle className="text-xl md:text-2xl text-primary">Master <span className="text-sm">(Lite + Plus)</span></CardTitle>
-                <CardDescription className="text-sm md:text-base">
+                {/* <CardDescription className="text-sm md:text-base">
                   Exclusivo para cargos executivos e estratégicos
-                </CardDescription>
+                </CardDescription> */}
               </CardHeader>
               <CardContent className="p-5 md:p-6">
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Criação do Linkedin ou reestruturação (CV Digital)</span>
+                    <span className="text-sm md:text-base leading-relaxed">Criação ou reestruturação do Linkedin</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
@@ -301,17 +307,21 @@ export default function LandingPage() {
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                     <span className="text-sm md:text-base leading-relaxed">Mentoria 3 meses</span>
                   </li>
-                  <li className="flex items-start gap-3">
+                  {/* <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                     <span className="text-sm md:text-base leading-relaxed">Criação de Pallet de cores</span>
-                  </li>
+                  </li> */}
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Narca pessoal</span>
+                    <span className="text-sm md:text-base leading-relaxed">Marca pessoal</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
                     <span className="text-sm md:text-base leading-relaxed">Catalogar empresas</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span className="text-sm md:text-base leading-relaxed">Metodologia STAR</span>
                   </li>
                 </ul>
               </CardContent>
@@ -324,56 +334,90 @@ export default function LandingPage() {
       <section id="processo" className="py-16 md:py-20 lg:py-24">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">Plano de Ação</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">PLANO DE AÇÃO</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-              Etapas do nosso processo de recrutamento especializado
+              ETAPAS DO PROCESSO
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                number: "01",
-                title: "Mapeamento de mercado",
-                description:
-                  "Pesquisar, buscar e identificar profissionais mais qualificados para uma vaga específica.",
-              },
-              {
-                number: "02",
-                title: "Prospecção ativa",
-                description: "Aborda talentos de forma estratégica.",
-              },
-              {
-                number: "03",
-                title: "Entrevistas e triagem",
-                description: "Avalia as competências técnicas e comportamentais dos candidatos.",
-              },
-              {
-                number: "04",
-                title: "Negociação",
-                description:
-                  "Atua como intermediador entre empresa e candidato para alinhar expectativas salariais e benefícios.",
-              },
-              {
-                number: "05",
-                title: "Acompanhamento",
-                description: "Atua no processo de onboarding, garantindo integração do novo colaborador.",
-              },
-              {
-                number: "06",
-                title: "Diagnóstico",
-                description: "Interpretação do cargo junto ao gestor ou líder direto.",
-              },
-            ].map((step, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader className="space-y-2 p-5 md:p-6">
-                  <div className="text-4xl md:text-5xl font-bold text-secondary/20">{step.number}</div>
-                  <CardTitle className="text-lg md:text-xl">{step.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="p-5 md:p-6 pt-0">
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{step.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-secondary/20">
+              <CardContent className="p-5 md:p-6">
+                <ul className="space-y-3 text-sm md:text-base text-muted-foreground leading-relaxed">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Entrevista com candidato (objetivo)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Estudo de perfil (arquétipo/questionário)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Reestruturação curricular/ inglês</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Marketing profissional</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Marca pessoal</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Criação/restruturação linkedin / inglês</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Criação de landing page ou linktree</span>
+                  </li>
+                  {/* <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Criação de palette de cores</span>
+                  </li> */}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Posicionamento do Instagram</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Conexão do mercado (analise, criação e perfil digital)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Negociação com diferentes estilos</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Linguagem corporal, tom de voz e escuta</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Cenário do mercado alvo</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Simulação de entrevista</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Catalogar empresas</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Orientação para novo desafio</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Mentoria durante 03 meses</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
+                    <span>Monitoramento dos processos</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
