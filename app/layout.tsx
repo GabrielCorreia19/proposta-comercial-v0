@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Talent Hunt - Proposta Comercial | Headhunter Especializado",
+  title: "Decisão Brasil - Proposta Comercial | Headhunter Especializado",
   description:
     "Especialistas em Talent Hunting, Recrutamento e Seleção. Conectamos os melhores talentos às melhores oportunidades.",
   generator: "v0.app",

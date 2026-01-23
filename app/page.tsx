@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle2, Target, Users, TrendingUp, Shield, Award, Briefcase, Phone, MapPin } from "lucide-react"
+import { CheckCircle2, Target, Users, TrendingUp, Shield, Award, Briefcase, Phone, MapPin, Mail } from "lucide-react"
 
 export default function LandingPage() {
   return (
@@ -35,8 +35,8 @@ export default function LandingPage() {
               Contato
             </a>
           </nav>
-          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-sm md:text-base">
-            Fale Conosco
+          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-sm md:text-base" asChild>
+            <a href="https://wa.me/5571999912091" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
           </Button>
         </div>
       </header>
@@ -177,9 +177,6 @@ export default function LandingPage() {
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">Nossos Planos</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-              Escolha o plano ideal para as necessidades da sua empresa
-            </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {/* Plano Básico */}
@@ -339,85 +336,40 @@ export default function LandingPage() {
               ETAPAS DO PROCESSO
             </p>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <Card className="border-secondary/20">
-              <CardContent className="p-5 md:p-6">
-                <ul className="space-y-3 text-sm md:text-base text-muted-foreground leading-relaxed">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Entrevista com candidato (objetivo)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Estudo de perfil (arquétipo/questionário)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Reestruturação curricular/ inglês</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Marketing profissional</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Marca pessoal</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Criação/restruturação linkedin / inglês</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Criação de landing page ou linktree</span>
-                  </li>
-                  {/* <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Criação de palette de cores</span>
-                  </li> */}
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Posicionamento do Instagram</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Conexão do mercado (analise, criação e perfil digital)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Negociação com diferentes estilos</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Linguagem corporal, tom de voz e escuta</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Cenário do mercado alvo</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Simulação de entrevista</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Catalogar empresas</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Orientação para novo desafio</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Mentoria durante 03 meses</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span>Monitoramento dos processos</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+            {[
+              "Entrevista com candidato (objetivo)",
+              "Estudo de perfil (arquétipo/questionário)",
+              "Reestruturação curricular/ inglês",
+              "Marketing profissional",
+              "Marca pessoal",
+              "Criação/restruturação linkedin / inglês",
+              "Criação de landing page ou linktree",
+              "Posicionamento do Instagram",
+              "Conexão do mercado (analise, criação e perfil digital)",
+              "Negociação com diferentes estilos",
+              "Linguagem corporal, tom de voz e escuta",
+              "Cenário do mercado alvo",
+              "Simulação de entrevista",
+              "Catalogar empresas",
+              "Orientação para novo desafio",
+              "Mentoria durante 03 meses",
+              "Monitoramento dos processos",
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="group relative bg-background hover:bg-muted/50 border border-border/50 rounded-xl p-4 transition-all hover:shadow-md"
+              >
+                <div className="flex items-start gap-4">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-xs font-bold text-secondary group-hover:bg-secondary group-hover:text-secondary-foreground transition-colors">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <p className="text-sm font-medium leading-relaxed pt-1.5 text-foreground/80 group-hover:text-foreground transition-colors">
+                    {item}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -436,24 +388,32 @@ export default function LandingPage() {
               <CardContent className="space-y-6 md:space-y-8 p-5 md:p-6">
                 <div>
                   <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">Custos dos processos</h3>
-                  <p className="text-sm md:text-base text-muted-foreground mb-3 leading-relaxed">
-                    Cobramos o valor de <strong className="text-foreground">70% da remuneração</strong> baseado em R$
-                    4.000,00 por processo e assessoria profissional.
-                  </p>
-                  <p className="text-lg md:text-xl font-bold text-primary">Custo total: R$ 5.600,00</p>
+                  <ul className="space-y-3 text-sm md:text-base text-muted-foreground mb-3 leading-relaxed">
+                    <li>
+                      <strong className="text-foreground">Lite:</strong> 2 Salários Mínimos + 50% taxa de sucesso
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Plus:</strong> 3 Salários Mínimos + 50% taxa de sucesso
+                    </li>
+                    <li>
+                      <strong className="text-foreground">Master:</strong> 4 Salários Mínimos + 50% taxa de sucesso
+                    </li>
+                  </ul>
                 </div>
-                <div>
+                {/* <div>
                   <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">Custo de logística</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                     Atuação presencial na região de prospecção, divulgação, Recrutamento e Seleção (repasse de custo,
                     caso haja deslocamento de cidade ou região).
                   </p>
-                </div>
+                </div> */}
                 <div>
                   <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">Forma de pagamento</h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">50% inicial</strong> e{" "}
-                    <strong className="text-foreground">50%</strong> quando o profissional iniciar o trabalho.
+                    Pix / Cartão de crédito em até <strong className="text-foreground">10x sem juros dos honorários</strong>.
+                  </p>
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed mt-8">
+                    <strong className="text-foreground">O pagamento da taxa de sucesso deverá ser realizado no primeiro salário recebido, uma única vez.</strong>
                   </p>
                 </div>
                 <div className="bg-primary/5 p-4 md:p-6 rounded-lg border border-primary/20">
@@ -479,9 +439,9 @@ export default function LandingPage() {
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 px-2">Entre em Contato</h2>
-            <p className="text-base md:text-lg text-primary-foreground/90 leading-relaxed px-4">
+            {/* <p className="text-base md:text-lg text-primary-foreground/90 leading-relaxed px-4">
               Estamos prontos para ajudar sua empresa a encontrar os melhores talentos
-            </p>
+            </p> */}
           </div>
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
             <Card className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground">
@@ -514,7 +474,11 @@ export default function LandingPage() {
           <div className="text-center mt-8 md:mt-12 space-y-3 px-4">
             <p className="flex items-center justify-center gap-2 text-base md:text-lg flex-wrap">
               <Phone className="h-5 w-5 text-secondary shrink-0" />
-              <span>(71) 3340.1826 | (71) 99991-2091</span>
+              <span>(71) 99999-2090 | (71) 99991-2091</span>
+            </p>
+            <p className="flex items-center justify-center gap-2 text-base md:text-lg flex-wrap">
+              <Mail className="h-5 w-5 text-secondary shrink-0" />
+              <a href="mailto:comercial@decisaobrasil.com.br" className="hover:underline">comercial@decisaobrasil.com.br</a>
             </p>
           </div>
         </div>
@@ -523,7 +487,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="py-6 md:py-8 bg-primary/95 text-primary-foreground/80 text-center text-xs md:text-sm border-t border-primary-foreground/10">
         <div className="container px-4">
-          <p>© 2026 Talent Hunt. Todos os direitos reservados.</p>
+          <p>© 2026 Decisão Brasil. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
