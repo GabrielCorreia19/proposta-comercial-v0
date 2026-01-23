@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Decisão Brasil - Proposta Comercial | Headhunter Especializado",
   description:
-    "Especialistas em Talent Hunting, Recrutamento e Seleção. Conectamos os melhores talentos às melhores oportunidades.",
+    "Job Hunter, Recolocação Profissional. Conectamos os melhores talentos às melhores oportunidades.",
   generator: "v0.app",
   icons: {
     icon: "/logo-decisao-brasil.png",
