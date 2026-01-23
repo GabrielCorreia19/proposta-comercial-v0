@@ -9,7 +9,7 @@ export default function LandingPage() {
     <div className="min-h-screen">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-2">
             {/* <div className="h-10 w-10 rounded-full bg-secondary" /> */}
             {/* <span className="font-bold text-lg md:text-xl text-primary">Talent Hunt</span> */}
@@ -44,7 +44,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 lg:py-32 bg-primary text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 bg-[url('/abstract-professional-business-pattern.jpg')] opacity-5" />
-        <div className="container relative px-4 md:px-6">
+        <div className="container mx-auto relative px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             {/* <Badge className="mb-6 bg-secondary text-secondary-foreground hover:bg-secondary/90">
               Especialistas em Talent Hunting
@@ -77,7 +77,7 @@ export default function LandingPage() {
 
       {/* Nossos Serviços */}
       <section id="servicos" className="py-16 md:py-20 lg:py-24 bg-muted/30">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">Nossos Serviços</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
@@ -125,7 +125,7 @@ export default function LandingPage() {
 
       {/* Proposta */}
       <section id="proposta" className="py-16 md:py-20 lg:py-24">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center text-primary px-2">
               Nossa Proposta
@@ -174,7 +174,7 @@ export default function LandingPage() {
 
       {/* Planos */}
       <section id="planos" className="py-16 md:py-20 lg:py-24 bg-muted/30">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">Nossos Planos</h2>
           </div>
@@ -329,7 +329,7 @@ export default function LandingPage() {
 
       {/* Plano de Ação - Etapas do Processo */}
       <section id="processo" className="py-16 md:py-20 lg:py-24">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">PLANO DE AÇÃO</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
@@ -376,7 +376,7 @@ export default function LandingPage() {
 
       {/* Orçamento */}
       <section id="orcamento" className="py-16 md:py-20 lg:py-24 bg-muted/30">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center text-primary px-2">
               Investimento
@@ -436,7 +436,7 @@ export default function LandingPage() {
 
       {/* Contato / Footer */}
       <section id="contato" className="py-16 md:py-20 lg:py-24 bg-primary text-primary-foreground">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 px-2">Entre em Contato</h2>
             {/* <p className="text-base md:text-lg text-primary-foreground/90 leading-relaxed px-4">
@@ -486,7 +486,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="py-6 md:py-8 bg-primary/95 text-primary-foreground/80 text-center text-xs md:text-sm border-t border-primary-foreground/10">
-        <div className="container px-4">
+        <div className="container mx-auto px-4">
           <p>© 2026 Decisão Brasil. Todos os direitos reservados.</p>
         </div>
       </footer>
