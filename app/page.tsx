@@ -1,8 +1,25 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { CheckCircle2, Target, Users, TrendingUp, Shield, Award, Briefcase, Phone, MapPin, Mail } from "lucide-react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  CheckCircle2,
+  Target,
+  Users,
+  TrendingUp,
+  Shield,
+  Award,
+  Briefcase,
+  Phone,
+  MapPin,
+  Mail,
+} from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -13,30 +30,62 @@ export default function LandingPage() {
           <div className="flex items-center gap-2">
             {/* <div className="h-10 w-10 rounded-full bg-secondary" /> */}
             {/* <span className="font-bold text-lg md:text-xl text-primary">Talent Hunt</span> */}
-            <Image src="/logo-decisao-brasil.png" alt="Talent Hunt" width={180} height={100} />
+            <Image
+              src="/logo-decisao-brasil.png"
+              alt="Talent Hunt"
+              width={180}
+              height={100}
+            />
           </div>
           <nav className="hidden md:flex gap-6">
-            <a href="#servicos" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a
+              href="#servicos"
+              className="text-sm font-medium hover:text-secondary transition-colors"
+            >
               Serviços
             </a>
-            <a href="#proposta" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a
+              href="#proposta"
+              className="text-sm font-medium hover:text-secondary transition-colors"
+            >
               Proposta
             </a>
-            <a href="#planos" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a
+              href="#planos"
+              className="text-sm font-medium hover:text-secondary transition-colors"
+            >
               Planos
             </a>
-            <a href="#processo" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a
+              href="#processo"
+              className="text-sm font-medium hover:text-secondary transition-colors"
+            >
               Processo
             </a>
-            <a href="#orcamento" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a
+              href="#orcamento"
+              className="text-sm font-medium hover:text-secondary transition-colors"
+            >
               Orçamento
             </a>
-            <a href="#contato" className="text-sm font-medium hover:text-secondary transition-colors">
+            <a
+              href="#contato"
+              className="text-sm font-medium hover:text-secondary transition-colors"
+            >
               Contato
             </a>
           </nav>
-          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-sm md:text-base" asChild>
-            <a href="https://wa.me/5571999912091" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
+          <Button
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-sm md:text-base"
+            asChild
+          >
+            <a
+              href="https://wa.me/5571999912091"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fale Conosco
+            </a>
           </Button>
         </div>
       </header>
@@ -56,10 +105,16 @@ export default function LandingPage() {
               {/* Foco em pessoas e organização, atuando no desenvolvimento humano na prática dos processos de recrutamento
               especializado. */}
               {/* Metodologia, processo e estratégia para gerar resultados em recrutamento especializado, outplacement e transição de carreira, com foco na recolocação profissional.  */}
-              Processos estruturados e estratégias estratégicas de outplacement e transição de carreira, com foco total na recolocação profissional.
+              Processos estruturados e estratégias estratégicas de outplacement
+              e transição de carreira, com foco total na recolocação
+              profissional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90" asChild>
+              <Button
+                size="lg"
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+                asChild
+              >
                 <a href="#proposta">Conheça Nossa Proposta</a>
               </Button>
               <Button
@@ -79,7 +134,9 @@ export default function LandingPage() {
       <section id="servicos" className="py-16 md:py-20 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">Nossos Serviços</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">
+              Nossos Serviços
+            </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
               Trabalho realizado com metodologia job hunter
             </p>
@@ -89,28 +146,46 @@ export default function LandingPage() {
               {
                 title: "Headhunter Empresas",
                 icon: Target,
-                description: "Busca especializada de profissionais para cargos estratégicos",
+                description:
+                  "Busca especializada de profissionais para cargos estratégicos",
               },
-              { title: "Outplacement", icon: Users, description: "Suporte emocional e orientação de carreira" },
+              {
+                title: "Outplacement",
+                icon: Users,
+                description: "Suporte emocional e orientação de carreira",
+              },
               {
                 title: "Recolocação profissional",
                 icon: TrendingUp,
-                description: "Processo estratégico de reinserção no mercado de trabalho",
+                description:
+                  "Processo estratégico de reinserção no mercado de trabalho",
               },
-              { title: "Transição de carreira", icon: Award, description: "Utilizando experiência  anterior como diferencial" },
+              {
+                title: "Transição de carreira",
+                icon: Award,
+                description:
+                  "Utilizando experiência  anterior como diferencial",
+              },
               {
                 title: "Desenvolvimento de Pessoas PDI",
                 icon: Briefcase,
-                description: "Plano de Desenvolvimento Individual personalizado",
+                description:
+                  "Plano de Desenvolvimento Individual personalizado",
               },
-              { title: "R&S", icon: Users, description: "Recrutamento e Seleção completo" },
+              {
+                title: "R&S",
+                icon: Users,
+                description: "Recrutamento e Seleção completo",
+              },
             ].map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader className="space-y-4">
                   <div className="h-12 w-12 rounded-lg bg-secondary/10 flex items-center justify-center">
                     <service.icon className="h-6 w-6 text-secondary" />
                   </div>
-                  <CardTitle className="text-lg md:text-xl">{service.title}</CardTitle>
+                  <CardTitle className="text-lg md:text-xl">
+                    {service.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-sm md:text-base leading-relaxed">
@@ -132,9 +207,12 @@ export default function LandingPage() {
             </h2>
             <Card className="border-secondary/20">
               <CardHeader className="space-y-2 p-5 md:p-6">
-                <CardTitle className="text-xl md:text-2xl text-secondary">Assessoria para Recolocação Profissional</CardTitle>
+                <CardTitle className="text-xl md:text-2xl text-secondary">
+                  Assessoria para Recolocação Profissional
+                </CardTitle>
                 <CardDescription className="text-sm md:text-base leading-relaxed">
-                  Direcionamento na busca por uma nova oportunidade profissional.
+                  Direcionamento na busca por uma nova oportunidade
+                  profissional.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 md:space-y-8 p-5 md:p-6">
@@ -176,15 +254,23 @@ export default function LandingPage() {
       <section id="planos" className="py-16 md:py-20 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">Nossos Planos</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">
+              Nossos Planos
+            </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {/* Plano Básico */}
-            <Card className="relative hover:shadow-lg transition-shadow"> {/* Added relative class for absolute positioning */}
+            <Card className="relative hover:shadow-lg transition-shadow">
+              {" "}
+              {/* Added relative class for absolute positioning */}
               {/* Pricing for Lite Plan */}
               <div className="absolute top-4 right-4 text-right z-10">
-                <span className="block text-sm font-semibold text-primary">2 Salários Mínimos</span>
-                <span className="block text-xs text-muted-foreground">+ 80% taxa de sucesso</span>
+                <span className="block text-sm font-semibold text-primary">
+                  2 Salários Mínimos
+                </span>
+                <span className="block text-xs text-muted-foreground">
+                  + 80% taxa de sucesso
+                </span>
               </div>
               <CardHeader className="space-y-4 p-5 md:p-6">
                 <div className="h-12 w-12 rounded-lg bg-muted flex items-center justify-center">
@@ -199,15 +285,21 @@ export default function LandingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Entrevista profissional</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Entrevista profissional
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Reestruturação Curricular</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Reestruturação Curricular
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Estudo de Perfil</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Estudo de Perfil
+                    </span>
                   </li>
                   {/* <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
@@ -215,11 +307,15 @@ export default function LandingPage() {
                   </li> */}
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Entrevista e processos seletivos (orientação)</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Entrevista e processos seletivos (orientação)
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Monitoramento dos processos</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Monitoramento dos processos
+                    </span>
                   </li>
                 </ul>
               </CardContent>
@@ -229,8 +325,12 @@ export default function LandingPage() {
             <Card className="relative hover:shadow-lg transition-shadow border-secondary/50 relative">
               {/* Pricing for Plus Plan */}
               <div className="absolute top-4 right-4 text-right z-10">
-                <span className="block text-sm font-semibold text-primary">3 Salários Mínimos</span>
-                <span className="block text-xs text-muted-foreground">+ 80% taxa de sucesso</span>
+                <span className="block text-sm font-semibold text-primary">
+                  3 Salários Mínimos
+                </span>
+                <span className="block text-xs text-muted-foreground">
+                  + 80% taxa de sucesso
+                </span>
               </div>
               {/* <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <Badge className="bg-secondary text-secondary-foreground">Mais Popular</Badge>
@@ -239,7 +339,9 @@ export default function LandingPage() {
                 <div className="h-12 w-12 rounded-lg bg-secondary/20 flex items-center justify-center">
                   <Award className="h-6 w-6 text-secondary" />
                 </div>
-                <CardTitle className="text-xl md:text-2xl text-secondary">Plus <span className="text-sm">(+ Lite)</span></CardTitle>
+                <CardTitle className="text-xl md:text-2xl text-secondary">
+                  Plus <span className="text-sm">(+ Lite)</span>
+                </CardTitle>
                 {/* <CardDescription className="text-sm md:text-base">
                   Solução completa para gestão de talentos
                 </CardDescription> */}
@@ -248,23 +350,33 @@ export default function LandingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Negociação com diferentes perfis</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Negociação com diferentes perfis
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Linguagem, corporal, tom de voz e escuta</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Linguagem, corporal, tom de voz e escuta
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Marketing pessoal</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Marketing pessoal
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Análise e criação do perfil digital</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Análise e criação do perfil digital
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Cenário do mercado alvo</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Cenário do mercado alvo
+                    </span>
                   </li>
                 </ul>
               </CardContent>
@@ -274,14 +386,20 @@ export default function LandingPage() {
             <Card className="relative hover:shadow-lg transition-shadow border-primary/50 md:col-span-2 lg:col-span-1">
               {/* Pricing for Master Plan */}
               <div className="absolute top-4 right-4 text-right z-10">
-                <span className="block text-sm font-semibold text-primary">4 Salários Mínimos</span>
-                <span className="block text-xs text-muted-foreground">+ 80% taxa de sucesso</span>
+                <span className="block text-sm font-semibold text-primary">
+                  4 Salários Mínimos
+                </span>
+                <span className="block text-xs text-muted-foreground">
+                  + 80% taxa de sucesso
+                </span>
               </div>
               <CardHeader className="space-y-4 p-5 md:p-6">
                 <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl md:text-2xl text-primary">Master <span className="text-sm">(Lite + Plus)</span></CardTitle>
+                <CardTitle className="text-xl md:text-2xl text-primary">
+                  Master <span className="text-sm">(Lite + Plus)</span>
+                </CardTitle>
                 {/* <CardDescription className="text-sm md:text-base">
                   Exclusivo para cargos executivos e estratégicos
                 </CardDescription> */}
@@ -290,19 +408,27 @@ export default function LandingPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Criação ou reestruturação do Linkedin</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Criação ou reestruturação do Linkedin
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Criação de landing page</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Criação de landing page
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Posicionamento Instagram</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Posicionamento Instagram
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Mentoria 3 meses</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Mentoria 3 meses
+                    </span>
                   </li>
                   {/* <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
@@ -310,15 +436,21 @@ export default function LandingPage() {
                   </li> */}
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Marca pessoal</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Marca pessoal
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Catalogar empresas</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Catalogar empresas
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
-                    <span className="text-sm md:text-base leading-relaxed">Metodologia STAR</span>
+                    <span className="text-sm md:text-base leading-relaxed">
+                      Metodologia STAR
+                    </span>
                   </li>
                 </ul>
               </CardContent>
@@ -331,7 +463,9 @@ export default function LandingPage() {
       <section id="processo" className="py-16 md:py-20 lg:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">PLANO DE AÇÃO</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-primary px-2">
+              PLANO DE AÇÃO
+            </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
               ETAPAS DO PROCESSO
             </p>
@@ -387,16 +521,21 @@ export default function LandingPage() {
               </CardHeader>
               <CardContent className="space-y-6 md:space-y-8 p-5 md:p-6">
                 <div>
-                  <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">Custos dos processos</h3>
+                  <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">
+                    Custos dos processos
+                  </h3>
                   <ul className="space-y-3 text-sm md:text-base text-muted-foreground mb-3 leading-relaxed">
                     <li>
-                      <strong className="text-foreground">Lite:</strong> 2 Salários Mínimos + 80% taxa de sucesso
+                      <strong className="text-foreground">Lite:</strong> 2
+                      Salários Mínimos + 80% taxa de sucesso
                     </li>
                     <li>
-                      <strong className="text-foreground">Plus:</strong> 3 Salários Mínimos + 80% taxa de sucesso
+                      <strong className="text-foreground">Plus:</strong> 3
+                      Salários Mínimos + 80% taxa de sucesso
                     </li>
                     <li>
-                      <strong className="text-foreground">Master:</strong> 4 Salários Mínimos + 80% taxa de sucesso
+                      <strong className="text-foreground">Master:</strong> 4
+                      Salários Mínimos + 80% taxa de sucesso
                     </li>
                   </ul>
                 </div>
@@ -408,12 +547,21 @@ export default function LandingPage() {
                   </p>
                 </div> */}
                 <div>
-                  <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">Forma de pagamento</h3>
+                  <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">
+                    Forma de pagamento
+                  </h3>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    Pix / Cartão de crédito em até <strong className="text-foreground">10x sem juros dos honorários</strong>.
+                    Pix / Cartão de crédito em até{" "}
+                    <strong className="text-foreground">
+                      10x sem juros dos honorários
+                    </strong>
+                    .
                   </p>
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed mt-8">
-                    <strong className="text-foreground">O pagamento da taxa de sucesso deverá ser realizado no primeiro salário recebido, uma única vez.</strong>
+                    <strong className="text-foreground">
+                      O pagamento da taxa de sucesso deverá ser realizado no
+                      primeiro salário recebido, uma única vez.
+                    </strong>
                   </p>
                 </div>
                 <div className="bg-primary/5 p-4 md:p-6 rounded-lg border border-primary/20">
@@ -422,10 +570,11 @@ export default function LandingPage() {
                     <span>Informação Confidencial</span>
                   </h3>
                   <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                    Significará em cuidar para que as informações confidenciais fiquem restritas ao conhecimento tão
-                    somente das pessoas que estejam diretamente envolvidas nas discussões, análises, reuniões e
-                    negócios, devendo cientificá-los da existência deste Termo e da natureza confidencial destas
-                    informações.
+                    Significará em cuidar para que as informações confidenciais
+                    fiquem restritas ao conhecimento tão somente das pessoas que
+                    estejam diretamente envolvidas nas discussões, análises,
+                    reuniões e negócios, devendo cientificá-los da existência
+                    deste Termo e da natureza confidencial destas informações.
                   </p>
                 </div>
               </CardContent>
@@ -435,10 +584,15 @@ export default function LandingPage() {
       </section>
 
       {/* Contato / Footer */}
-      <section id="contato" className="py-16 md:py-20 lg:py-24 bg-primary text-primary-foreground">
+      <section
+        id="contato"
+        className="py-16 md:py-20 lg:py-24 bg-primary text-primary-foreground"
+      >
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 px-2">Entre em Contato</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 px-2">
+              Entre em Contato
+            </h2>
             {/* <p className="text-base md:text-lg text-primary-foreground/90 leading-relaxed px-4">
               Estamos prontos para ajudar sua empresa a encontrar os melhores talentos
             </p> */}
@@ -478,7 +632,12 @@ export default function LandingPage() {
             </p>
             <p className="flex items-center justify-center gap-2 text-base md:text-lg flex-wrap">
               <Mail className="h-5 w-5 text-secondary shrink-0" />
-              <a href="mailto:comercial@decisaobrasil.com.br" className="hover:underline">comercial@decisaobrasil.com.br</a>
+              <a
+                href="mailto:comercial@decisaobrasil.com.br"
+                className="hover:underline"
+              >
+                comercial@decisaobrasil.com.br
+              </a>
             </p>
           </div>
         </div>
@@ -491,5 +650,5 @@ export default function LandingPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
