@@ -184,7 +184,7 @@ export default function LandingPage() {
               {/* Pricing for Lite Plan */}
               <div className="absolute top-4 right-4 text-right z-10">
                 <span className="block text-sm font-semibold text-primary">2 Salários Mínimos</span>
-                <span className="block text-xs text-muted-foreground">+ 50% taxa de sucesso</span>
+                <span className="block text-xs text-muted-foreground">+ 80% taxa de sucesso</span>
               </div>
               <CardHeader className="space-y-4 p-5 md:p-6">
                 <div className="h-12 w-12 rounded-lg bg-muted flex items-center justify-center">
@@ -230,7 +230,7 @@ export default function LandingPage() {
               {/* Pricing for Plus Plan */}
               <div className="absolute top-4 right-4 text-right z-10">
                 <span className="block text-sm font-semibold text-primary">3 Salários Mínimos</span>
-                <span className="block text-xs text-muted-foreground">+ 50% taxa de sucesso</span>
+                <span className="block text-xs text-muted-foreground">+ 80% taxa de sucesso</span>
               </div>
               {/* <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                 <Badge className="bg-secondary text-secondary-foreground">Mais Popular</Badge>
@@ -275,7 +275,7 @@ export default function LandingPage() {
               {/* Pricing for Master Plan */}
               <div className="absolute top-4 right-4 text-right z-10">
                 <span className="block text-sm font-semibold text-primary">4 Salários Mínimos</span>
-                <span className="block text-xs text-muted-foreground">+ 50% taxa de sucesso</span>
+                <span className="block text-xs text-muted-foreground">+ 80% taxa de sucesso</span>
               </div>
               <CardHeader className="space-y-4 p-5 md:p-6">
                 <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center">
@@ -390,13 +390,13 @@ export default function LandingPage() {
                   <h3 className="font-semibold text-base md:text-lg mb-3 text-secondary">Custos dos processos</h3>
                   <ul className="space-y-3 text-sm md:text-base text-muted-foreground mb-3 leading-relaxed">
                     <li>
-                      <strong className="text-foreground">Lite:</strong> 2 Salários Mínimos + 50% taxa de sucesso
+                      <strong className="text-foreground">Lite:</strong> 2 Salários Mínimos + 80% taxa de sucesso
                     </li>
                     <li>
-                      <strong className="text-foreground">Plus:</strong> 3 Salários Mínimos + 50% taxa de sucesso
+                      <strong className="text-foreground">Plus:</strong> 3 Salários Mínimos + 80% taxa de sucesso
                     </li>
                     <li>
-                      <strong className="text-foreground">Master:</strong> 4 Salários Mínimos + 50% taxa de sucesso
+                      <strong className="text-foreground">Master:</strong> 4 Salários Mínimos + 80% taxa de sucesso
                     </li>
                   </ul>
                 </div>
